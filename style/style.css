@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    animation: trans 1s infinite;
+    animation-direction: alternate;
+}
+@keyframes trans {
+    from {background-color: red;}
+    to {background-color: pink;}
+
+}
+#mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+#container{
+    height: 170px;
+    width: fit-content;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border: solid 1px red ;
+    border-radius: 30px;
+}
+button{
+    padding: 5px;
+    background-color: aqua;
+    margin: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin: 1px;
+    animation: titlea 1s infinite;
+    animation-direction: alternate;
+}
+@keyframes titlea {
+    from {color: black;}
+    to {color: gray;}
+}
