@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incrementer</title>
     <style>
-        div{
+        #other,#other1{
             border: 1px solid black;
             padding: 5px;
+        }
+        #result{
+            display: flex;
+            justify-content: center;
         }
     </style>
     
@@ -17,12 +21,14 @@
     <div id="other">
         <h1 id="msg"></h1>
     </div>
-    <div>
+    <div id="other1">
         <h1>This is an incrementer</h1>
     <h2 id="count"></h2>
     <button id="increment" onclick="increment()">Increment</button>
     <button onclick="save()">Save</button>
-    <p id="save">Previous Entries: </p>
+    <div id="result">
+        <p>Previous Entries: </p><p id="save"></p>
+    </div>
     </div>
     
     <script src="../js/incr.js"></script>

@@ -12,7 +12,12 @@ function increment(){
 }
 function save(){
     var z=document.getElementById("save");
-    z.textContent+=count+" - ";
+    if(z.innerText==""){
+        z.textContent+=count+" ";
+    }
+    else{
+        z.textContent+=" - "+count;
+    }
     count=0;
     x.textContent=count;
 }
